@@ -26,6 +26,9 @@
 # Inherit from common
 -include $(COMMON_PATH)/BoardConfigCommon.mk
 
+# Recovery
+TARGET_OTA_ASSERT_DEVICE := AI2202
+
 # TWRP specific build flags
 TW_Y_OFFSET := 25
 TW_H_OFFSET := -25
