@@ -37,12 +37,6 @@ TW_CUSTOM_CPU_POS := right
 TW_STATUS_ICONS_ALIGN := center
 
 # Vibrator
-TARGET_RECOVERY_DEVICE_MODULES += \
-    android.hardware.vibrator-V2-ndk_platform \
-    android.hardware.vibrator-V2-cpp
-RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.vibrator-V2-cpp.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.vibrator-V2-ndk_platform.so
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
 
