@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_AI2202.mk
+    $(LOCAL_DIR)/twrp_mondrian.mk

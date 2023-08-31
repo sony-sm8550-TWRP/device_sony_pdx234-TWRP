@@ -27,27 +27,15 @@
 -include $(COMMON_PATH)/BoardConfigCommon.mk
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := AI2202
+TARGET_OTA_ASSERT_DEVICE := mondrian
 
 # TWRP specific build flags
-TW_FRAMERATE := 144
-TW_Y_OFFSET := 25
-TW_H_OFFSET := -25
-TW_CUSTOM_CPU_POS := 180
-TW_CUSTOM_BATTERY_POS := 720
+TW_FRAMERATE := 120
 
 # Vibrator
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
 
-#
-# For local builds only
-#
-# Custom TWRP Versioning
-ifneq ($(wildcard device/common/version-info/.),)
-    # device version is optional - the default value is "0" if nothing is set in device tree
-    CUSTOM_TWRP_DEVICE_VERSION := 0
-endif
-#
-# end local build flags
-#
+TARGET_RECOVERY_DEVICE_MODULES += libexpat
+RECOVERY_LIBRARY_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libexpat.so

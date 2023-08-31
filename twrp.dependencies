@@ -1,8 +1,8 @@
 [
   {
     "remote": "TeamWin",
-    "repository": "android_device_asus_sm84xx-common",
-    "target_path": "device/asus/sm84xx-common",
+    "repository": "android_device_xiaomi_sm84xx-common",
+    "target_path": "device/xiaomi/sm84xx-common",
     "branch": "android-12.1"
   }
 ]
