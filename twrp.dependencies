@@ -1,8 +1,8 @@
 [
   {
     "remote": "TeamWin",
-    "repository": "android_device_xiaomi_sm84xx-common",
-    "target_path": "device/xiaomi/sm84xx-common",
+    "repository": "android_device_onrplus_sm85xx-common",
+    "target_path": "device/oneplus/sm85xx-common",
     "branch": "android-12.1"
   }
 ]
