@@ -41,11 +41,18 @@ $(call inherit-product, vendor/$(CUSTOM_VENDOR)/config/common.mk)
 BOARD_VENDOR := $(or $(word 2,$(subst /, ,$(firstword $(MAKEFILE_LIST)))),$(value 2))
 
 ## Device identifier. This must come after all inclusions
+
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := $(CUSTOM_VENDOR)_$(PRODUCT_DEVICE)
+PRODUCT_MODEL := CPH2449
+PRODUCT_SYSTEM_NAME := $(PRODUCT_MODEL)
+PRODUCT_SYSTEM_DEVICE := OP594DL1
 PRODUCT_BRAND := $(BOARD_VENDOR)
-PRODUCT_MODEL := $(shell echo $(PRODUCT_BRAND) | tr  '[:lower:]' '[:upper:]')_$(PRODUCT_DEVICE)
 PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
+    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 # Common path for device trees
 COMMON_PATH := device/$(PRODUCT_BRAND)/$(COMMON_SOC)-common
