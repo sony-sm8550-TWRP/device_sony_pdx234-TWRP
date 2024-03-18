@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_salami.mk
+    $(LOCAL_DIR)/twrp_pdx234.mk
+
+COMMON_LUNCH_CHOICES := \
+    twrp_pdx234-user \
+    twrp_pdx234-userdebug \
+    twrp_pdx234-eng

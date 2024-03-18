@@ -17,7 +17,7 @@
 # Only the below variable(s) need to be changed!
 #
 # Identifier for common folder
-COMMON_SOC := sm85xx
+COMMON_SOC := sm8550
 
 # Define hardware platform
 PRODUCT_PLATFORM := kalama
@@ -44,9 +44,9 @@ BOARD_VENDOR := $(or $(word 2,$(subst /, ,$(firstword $(MAKEFILE_LIST)))),$(valu
 
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := $(CUSTOM_VENDOR)_$(PRODUCT_DEVICE)
-PRODUCT_MODEL := CPH2449
+PRODUCT_MODEL := XQ-DQ72
 PRODUCT_SYSTEM_NAME := $(PRODUCT_MODEL)
-PRODUCT_SYSTEM_DEVICE := OP594DL1
+PRODUCT_SYSTEM_DEVICE := XQ-DQ72
 PRODUCT_BRAND := $(BOARD_VENDOR)
 PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 
