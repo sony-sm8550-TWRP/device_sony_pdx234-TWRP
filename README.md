@@ -33,6 +33,8 @@ Works:
 - [X] MTP
 - [X] Sideload
 - [X] USB OTG
+
+Not Works:
 - [X] Vibrator
 
 ## To use it:
