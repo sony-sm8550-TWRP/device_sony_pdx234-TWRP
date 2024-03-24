@@ -27,7 +27,7 @@
 -include $(COMMON_PATH)/BoardConfigCommon.mk
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := pdx234
+# TARGET_OTA_ASSERT_DEVICE := pdx234
 
 # TWRP specific build flags
 TW_FRAMERATE := 120
